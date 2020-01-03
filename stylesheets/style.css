@@ -1,0 +1,126 @@
+.bg-super-white { background: #f9f9f9; }
+.top-50 { top: 50% }
+.pointers { pointer-events: auto; }
+.no-pointers { pointer-events: none; }
+.link:hover { background: url(/images/line.png) repeat-x left bottom; }
+
+/* Markdown styles */
+.markdown-body a {
+  text-decoration: none;
+  color: #357edd;
+}
+.markdown-body .highlighter-rouge {
+  padding: .25rem .5rem;
+}
+.markdown-body pre {
+  margin: 0;
+  overflow: auto;
+}
+.markdown-body > .highlighter-rouge,
+.markdown-body > blockquote {
+  padding: .5rem 4rem;
+  margin: 2em -4rem;
+}
+.markdown-body > hr {
+  margin: 2em -4rem;
+  border: 0;
+  border-bottom: 1px dotted #CCC;
+}
+.markdown-body blockquote {
+  background: #f9f9f9;
+  border-left: .2rem solid #ccc;
+  padding-left: 3.8rem;
+}
+/* end Markdown styles */
+
+/*
+ * Some button layouts adapted from the jekyll template good-clean-read
+ * (https://github.com/adueck/good-clean-read), under MIT LICENSE
+ * (https://github.com/adueck/good-clean-read/blob/master/LICENSE)
+ */
+.button {
+    margin: 0.3rem;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.6em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white !important;
+    background-color: black !important;
+    transition: 0.3s;
+}
+
+.button-contrast {
+    margin: 0.3rem;
+    color: white;
+    background-color: black;
+    border-radius: 0.6em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.button-contrast:hover {
+    color: black !important;
+    background-color: lightgray !important;
+    transition: 0.3s;
+}
+/* end of button declarations */
+
+.info-box, .warn-box, .success-box {
+    border: 0.1rem solid gray;
+    border-left: 0.6rem solid gray;
+    padding: 1.0rem;
+    border-radius: 0.5rem;
+}
+
+.warn-box {
+    border-color: #d6b84d;
+}
+
+.success-box {
+    border-color: #2ea282;
+}
+
+.max-width-70 {
+    max-width: 70% !important;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  margin-top: 0.4em;
+  width: 100%;
+  height: 19em;
+  object-fit: cover;
+}
+
+table.results-table {
+  border-collapse: collapse;
+  border-style: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Consolas,monaco,monospace;
+  font-size: 1em;
+  text-align: right;
+}
+
+table.results-table th, table.results-table td {
+  border: 1px solid #bbb;
+  padding: 0.6em 1.2em;
+}
+
+.wrap-table {
+  overflow-x: auto;
+}

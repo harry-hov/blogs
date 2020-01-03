@@ -1,0 +1,22 @@
+title:            "Hariom Verma"
+description:      "Hariom Verma' personal blogs"
+url:              https://harry-hov.github.io/blogs  # Site url, without trailing slash.
+signoff:          "Hariom"
+facebook_appid:   # APP ID for like button
+google_analytics: # Set tracking
+share:            true # Turn on social media share buttons
+
+links:
+  - name:         Home
+    url:          /
+#  - name:         GSoC
+#    url:          /gsoc/
+  - name:         Posts
+    url:          /posts/
+
+timezone: UTC+05:30
+
+permalink:        /posts/:title
+defaults:
+  - values:
+      layout: "default"
