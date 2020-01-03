@@ -5,6 +5,7 @@ signoff:          "Hariom"
 facebook_appid:   # APP ID for like button
 google_analytics: # Set tracking
 share:            true # Turn on social media share buttons
+comments:         true
 
 links:
   - name:         Home
