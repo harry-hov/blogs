@@ -10,8 +10,8 @@ comments:         true
 links:
   - name:         Home
     url:          /
-#  - name:         GSoC
-#    url:          /gsoc/
+  - name:         GSoC
+    url:          /gsoc/
   - name:         Posts
     url:          /posts/
 
