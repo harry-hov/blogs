@@ -7,7 +7,7 @@ Hi everyone,
 
 This week, I continued my quest to learn more about Olga's work, but I kind of struggled a little. So I approached my mentors. Christian helped me in understanding Olga's work in a better way. He put some up some questions for me. Those questions are really helpful. 
 Regardless of the project, those questions will help anyone who wants to understand someone's work.
-So, it's a good idea to mention those in this blog(might help someone in future).[Hope he does not mind]
+So, it's a good idea to mention those in this blog.[Hope he does not mind]
 
 [*Dont* Hold your breath] Here are those:
 
@@ -23,8 +23,11 @@ So, it's a good idea to mention those in this blog(might help someone in future)
 - How were her goals similar and different from the goals in my proposal?
 - Is it possible to use the same approach?
 
+*(These questions might help someone in future)
+
 ---
----
+
+**After story:**
 
 Even after going through Olga's patches, I wasn't able to come up with the proper approach to unifying  `ref-filter` and `pretty` formatting logic. I dont think i can proceed forward Olga's way. 
 
