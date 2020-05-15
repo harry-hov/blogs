@@ -1,5 +1,5 @@
 ---
-title: "Week 0: The Ten Questions: All or Nothing!"
+title: "Week 1: The Ten Questions: All or Nothing!"
 categories: gsoc
 ---
 
