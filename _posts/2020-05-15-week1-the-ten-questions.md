@@ -23,8 +23,8 @@ So, it's a good idea to share those in this blog.[Hope he does not mind]
 - How were her goals similar and different from the goals in my proposal?
 - Is it possible to use the same approach?
 
-*(These questions might help someone in future)
-Note- Although title says 10, but they are 11 in total*
+*(These questions might help someone in future)*
+*Note- Although title says 10, but they are 11 in total*
 
 ---
 
