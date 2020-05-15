@@ -24,6 +24,7 @@ So, it's a good idea to share those in this blog.[Hope he does not mind]
 - Is it possible to use the same approach?
 
 *(These questions might help someone in future)
+Note- Although title says 10, but they are 11 in total*
 
 ---
 
@@ -48,5 +49,5 @@ Also, will add support for atoms in `pretty.c`.
 
 Summary: This week no patches, but it's full of learning.
 
-**Note** - I dont want my weekly blog to sound like personal notes. So, I'm thinking about writing another blog series about my findings related to GSoC project. Those will be more on technical side.
+**Note** - I dont want my weekly blogs to sound like personal notes. So, I'm thinking about writing another blog series about my findings related to GSoC project. Those will be more on technical side.
 bye... cya!
