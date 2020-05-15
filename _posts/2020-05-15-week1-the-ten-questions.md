@@ -24,18 +24,22 @@ So, it's a good idea to mention those in this blog(might help someone in future)
 - Is it possible to use the same approach?
 
 ---
+---
 
-Even after going through her patches, I wasn't able to come up with the proper approach to unifying  `ref-filter` and `pretty` formatting logic. 
+Even after going through Olga's patches, I wasn't able to come up with the proper approach to unifying  `ref-filter` and `pretty` formatting logic. I dont think i can proceed forward Olga's way. 
 
-Whats next?
+`pretty` and `ref-filter` uses totally different structures. Possible way I can think of is keep using both structures and make transition table between them. I'm not sure about this.(In fact, any suggestion will be highly appreciated.)
+
+## Whats next?
 
 "A good approach often comes from studying things, from trials and
 errors, and from discussions with other people" -  Christian
 {:.info-box}
 
 So, now I'm going to deep-diving into `pretty.c` and `ref-filter.c` formats.
-Also, will adding support for atoms in `pretty.c`.
+Also, will add support for atoms in `pretty.c`.
 
-Summary: This week probably was unproductive, but it's full of learning.
+Summary: This week no patches, but it's full of learning.
 
+**Note** - I dont want my weekly blog sounds like personal notes. So, I keep it less technical as much as possible. I'm thinking about writing another blog series about my findings related to my GSoC project. Those will be more on technical side.
 bye... cya!
