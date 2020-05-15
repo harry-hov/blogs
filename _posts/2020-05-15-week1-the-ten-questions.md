@@ -48,6 +48,8 @@ Also, will add support for atoms in `pretty.c`. This will improve my understandi
 
 Summary: This week no patches, but it's full of learning.
 
+Thanks, Christian and Heba for helping me to get started.
+
 **Note** - I dont want my weekly blogs to sound like personal notes. So, I'm thinking about writing another blog series about my findings related to GSoC project. Those will be more on technical side.
 
 bye... cya!
