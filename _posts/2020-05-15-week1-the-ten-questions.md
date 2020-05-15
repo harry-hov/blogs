@@ -34,7 +34,6 @@ Even after going through Olga's patches, I wasn't able to come up with the prope
 
 - `pretty` and `ref-filter` uses totally different structures.
 - Teach ref-filter.c to support everything that pretty.c can do, As they just increase the code that is useless to ref-filter.
-- 
 
 Right now, the only possible way I can think of is keep using both structures and make transition table between them. I'm not sure about this.**(In fact, any suggestion will be highly appreciated.)**
 
@@ -45,9 +44,10 @@ errors, and from discussions with other people" -  Christian
 {:.info-box}
 
 So, now I'm going to deep-dive into `pretty.c` and `ref-filter.c` formats.
-Also, will add support for atoms in `pretty.c`.
+Also, will add support for atoms in `pretty.c`. This will improve my understanding of pretty.c
 
 Summary: This week no patches, but it's full of learning.
 
 **Note** - I dont want my weekly blogs to sound like personal notes. So, I'm thinking about writing another blog series about my findings related to GSoC project. Those will be more on technical side.
+
 bye... cya!
