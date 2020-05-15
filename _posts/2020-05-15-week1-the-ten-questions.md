@@ -5,9 +5,9 @@ categories: gsoc
 
 Hi everyone,
 
-This week, I continued my quest to learn more about Olga's work, but I kind of struggled a little. So I approached my mentors. Christian helped me in understanding Olga's work in a better way. He put some up some questions for me. Those questions are really helpful. 
+This week, I continued my quest to learn more about Olga's work, but struggled a little. Therefore I approached my mentors. Christian helped me to understand Olga's work in a better way. He put forward some questions for better understanding. Those questions were helpful. 
 Regardless of the project, those questions will help anyone who wants to understand someone's work.
-So, it's a good idea to mention those in this blog.[Hope he does not mind]
+So, it's a good idea to share those in this blog.[Hope he does not mind]
 
 [*Dont* Hold your breath] Here are those:
 
@@ -29,9 +29,13 @@ So, it's a good idea to mention those in this blog.[Hope he does not mind]
 
 **After story:**
 
-Even after going through Olga's patches, I wasn't able to come up with the proper approach to unifying  `ref-filter` and `pretty` formatting logic. I dont think i can proceed forward Olga's way. 
+Even after going through Olga's patches, I wasn't able to come up with the proper approach to unify `ref-filter` and `pretty` formatting logic. I dont think i can proceed forward Olga's way. 
 
-`pretty` and `ref-filter` uses totally different structures. Possible way I can think of is keep using both structures and make transition table between them. I'm not sure about this.(In fact, any suggestion will be highly appreciated.)
+- `pretty` and `ref-filter` uses totally different structures.
+- Teach ref-filter.c to support everything that pretty.c can do, As they just increase the code that is useless to ref-filter.
+- 
+
+Right now, the only possible way I can think of is keep using both structures and make transition table between them. I'm not sure about this.**(In fact, any suggestion will be highly appreciated.)**
 
 ## Whats next?
 
@@ -39,10 +43,10 @@ Even after going through Olga's patches, I wasn't able to come up with the prope
 errors, and from discussions with other people" -  Christian
 {:.info-box}
 
-So, now I'm going to deep-diving into `pretty.c` and `ref-filter.c` formats.
+So, now I'm going to deep-dive into `pretty.c` and `ref-filter.c` formats.
 Also, will add support for atoms in `pretty.c`.
 
 Summary: This week no patches, but it's full of learning.
 
-**Note** - I dont want my weekly blog sounds like personal notes. So, I keep it less technical as much as possible. I'm thinking about writing another blog series about my findings related to my GSoC project. Those will be more on technical side.
+**Note** - I dont want my weekly blog to sound like personal notes. So, I'm thinking about writing another blog series about my findings related to GSoC project. Those will be more on technical side.
 bye... cya!
