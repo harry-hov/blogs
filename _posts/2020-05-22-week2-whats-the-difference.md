@@ -42,7 +42,7 @@ On the other hand, working of `git log` is very dispersed. e.g
 The stupidest thing I tried is re-writing cmd_log() from scratch in for-each-ref's way. I successfully implemented the "%h" using ref-filters logic.
 Here is why it's bad:
 - I can't implement every single functionality of `git log`
-- Back-Compatibility
+- Backward-Compatibility
 - Other features like `format patch` is also using pretty.c logic. So I cannot get rid of pretty formatting logic.
 - Getting rid of duplicate code is the aim of my project. I cant see that happening with this approach.
 
