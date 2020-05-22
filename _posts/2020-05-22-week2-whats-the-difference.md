@@ -14,6 +14,7 @@ Here is the whole working of `git for-each-ref` in few lines:
 ```
 filter_refs(...);
 verify_ref_format(&format);
+ref_array_sort()
 for (i = 0; i < maxcount; i++)
  show_ref_array_item(array.items[i], &format);
 ref_array_clear(&array);
