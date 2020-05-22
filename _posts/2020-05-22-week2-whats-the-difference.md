@@ -18,7 +18,14 @@ for (i = 0; i < maxcount; i++)
  show_ref_array_item(array.items[i], &format);
 ref_array_clear(&array);
 ```
-It is pretty straight.
+Its recipe is pretty straight. 
+1. call ref-filter API
+2. verify given format
+3. sort ref_array, if sorting provided
+4. fill the strbuf, based on given format 
+5. print refs
+6. clear memory
+done!
 
 ---
 
