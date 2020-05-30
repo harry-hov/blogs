@@ -15,11 +15,18 @@ And to understand atoms, `pretty.c` must need to support `ref-filter`'s structur
 
 Here are the few structures used by `pretty.c`
 
-Structures | Can be ditched? | Why?
---- | --- | ---
-[`cmt_fmt_map`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.c#L17-L25) | :x: | Cannot stop using this, but good candidate to make transition table 
-[`pretty_print_context`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.h#L26-L54) | :bangbang: | All pp_* functions depends on this. But I guess some fields can be ditched in favour of using ref-filter's [might need to modify pp_* functions too] 
-[`userformat_want`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.h#L62-L65) | :x: | No equivalance present in ref-filter
+
+[`cmt_fmt_map`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.c#L17-L25)
+- Cannot stop using this, but good candidate to make transition table 
+
+
+[`pretty_print_context`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.h#L26-L54)
+- All pp_* functions depends on this. But I guess some fields can be ditched in favour of using ref-filter's [might need to modify pp_* functions too] 
+
+
+[`userformat_want`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.h#L62-L65)
+- No equivalance present in ref-filter
+
 
 ---
 
@@ -37,4 +44,4 @@ struct ref_array {
 	struct rev_info *revs;
 } array;
 ```
-This might be good start point.
+This might be a good start point.
