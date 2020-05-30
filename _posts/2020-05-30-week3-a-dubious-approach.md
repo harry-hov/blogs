@@ -35,7 +35,9 @@ Here are the few structures used by `pretty.c`
 I guess, I'm going to focus more on structures.
 
 I see many part of 'git log' are using `struct rev_info *revs` and funtions are filling values in `revs`.
-Instead of this, We can start filling values in `array.revs`. 
+
+Its time to introduce pretty.c to `struct ref_array`.
+So, we can start filling values in `array.revs` instead of `revs`. 
 
 ```
 struct ref_array {
