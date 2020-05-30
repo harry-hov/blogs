@@ -36,7 +36,7 @@ I guess, I'm going to focus more on structures.
 
 I see many part of 'git log' are using `struct rev_info *revs` and funtions are filling values in `revs`.
 
-Its time to introduce pretty.c to `struct ref_array`.
+Its time to introduce `struct ref_array` to 'pretty.c'.
 So, we can start filling values in `array.revs` instead of `revs`. 
 
 ```
