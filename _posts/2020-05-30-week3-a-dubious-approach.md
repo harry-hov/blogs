@@ -25,7 +25,7 @@ Here are the few structures used by `pretty.c`
 
 
 [`userformat_want`](https://github.com/git/git/blob/1aa69c73577df21f5e37e47cc40cf44fc049121e/pretty.h#L62-L65)
-- No equivalance present in ref-filter
+- No equivalance present in ref-filter (Not even play much role in formatting logic)
 
 
 ---
