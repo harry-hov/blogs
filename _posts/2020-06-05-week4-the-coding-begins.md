@@ -7,7 +7,9 @@ Hi everyone,
 
 After many weeks spent on understanding the formatting logic. Now, it's time to get my hands dirty with code. 
 
-I intend to re-write `pretty_print_commit()` using ref-filters logic (as suggested by my mentors). 
+[x] added new config option for log. 
+
+[ ] Intend to re-write `pretty_print_commit()` using ref-filters logic. 
 
 ## What it does?
 `pretty_print_commit()` is mainly responsible for formatting and printing commit messages (not commit hash) in predefined commit formats. 
@@ -37,10 +39,6 @@ static int get_format_option(const char *placeholder,
 
 Will use this to set value of `format.format` and will later pass it into `verify_ref_format()`.
 
-If everything goes right, will try to do this with more options.
+---
 
-
- 
-
- 
-
+This function above `get_commit_option()` will act like as a transition table. This will help in porting `pretty_print_commit()` to use ref-filter logic.
