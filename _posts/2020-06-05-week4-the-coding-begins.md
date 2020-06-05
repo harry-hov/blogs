@@ -33,7 +33,7 @@ static int get_format_option(const char *placeholder,
             format.format = "%(objectname:short)";
             return 0;
         }
-        return 0;
+        return 1;
 }
 ```
 
