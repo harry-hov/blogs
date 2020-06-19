@@ -35,9 +35,9 @@ e.g- `C<color>`, `C(<color>)`, including `auto` and `always`
 
 I think its better to keep using current logic. Because both(`ref-filter` and `pretty`) are using `color.h`. They only have their own stripping logic.
 
-e.g. ref-filter is pulling out `red` from `color:red`
+e.g. ref-filter is pulling out `red` from `color:red` then using color.h
 
-pretty is pulling out `red` from `Cred` or `C(red)` or `C(auto, red)` or `C(always, red)`
+pretty is pulling out `red` from `Cred` or `C(red)` or `C(auto, red)` or `C(always, red)` then using color.h
 
 I still need to discuss about that with my mentors before concluding anything.  
 
