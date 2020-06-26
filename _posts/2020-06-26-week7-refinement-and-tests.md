@@ -9,9 +9,9 @@ The past week isn't that productive for me. But I still managed to work on a few
 
 - Added color-related formatting options and `m`, `d`, `D` straight forward from pretty.c to pretty-lib.c
 - Added new atom `signature` in ref-filter with `grade`, `signer`, `key`, `fingerprint`, `primarykeyfingerprint`, `trustlevel` as arguments.
-- Added signature related formatting options in pretty-lib.c using ref-filter
+- Added signature related formatting options in pretty-lib.c using ref-filter 
 
-Note: Signature realted formatting options are not yet in final shape. You can take a look at commits here: https://github.com/harry-hov/git/commits/signature?author=harry-hov
+Note: Signature related formatting options are not yet in final shape. `grade` and `trustlevel` are not working as expected. You can take a look at commits here: [https://github.com/harry-hov/git/commits/signature?author=harry-hov](https://github.com/harry-hov/git/commits/signature?author=harry-hov)
 
 ## What's next?
 
