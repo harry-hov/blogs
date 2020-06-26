@@ -7,7 +7,7 @@ categories: gsoc
 
 The past week isn't that productive for me. But I still managed to work on a few things. Without wasting any time, let's take a look:
 
-- Added color-related formatting options and `m`, `d`, `D` straight forward from pretty.c to pretty-lib.c
+- Added color-related formatting options and `m`, `d`, `D` [Copied straight forward from pretty.c to pretty-lib.c]
 - Added new atom `signature` in ref-filter with `grade`, `signer`, `key`, `fingerprint`, `primarykeyfingerprint`, `trustlevel` as arguments.
 - Added signature related formatting options in pretty-lib.c using ref-filter 
 
