@@ -93,3 +93,6 @@ In this blog, I would like to mention all the formatting option that are impleme
 
 *Note: Tests are yet to be performed on all the formatting options.
 
+If everything goes fine, by the end of next week all formatting options will get implemented.
+
+
