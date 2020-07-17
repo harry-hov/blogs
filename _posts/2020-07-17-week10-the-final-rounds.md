@@ -10,7 +10,7 @@ This is the 10th blog of my GSoC series and I'm happy to mention that I'm almost
 I can simply divide my work on user formats in 3 categories:
 - Used ref-filter's logic.
 - Add support for that user format in ref-filter and then used ref-filter's logic.
-- keep using pretty.c logic
+- keep using pretty.c logic.
 
 Lets talk about all of these one by one.
 
@@ -41,6 +41,9 @@ There exists some formatting options that makes no sense to ref-filter or are no
 For ex: 
 - reflog related formatting options.
 - formatting options like `%m` and `%w([<w>[,<i1>[,<i2>]]])`.
+
+*Note: 45 user formats are implemented using (1) and (2) and 20 implemented using (3). [these are approx values]
+
 
 ## What's Next
 
