@@ -11,7 +11,7 @@ Lets take a look at status of each of these:
 
 #### signature atom
 
-Partially working. After discussion with my mentors I'm still working on this.
+Partially working. After some discussion with my mentors I'm still working on this.
 
 #### trailers
 
