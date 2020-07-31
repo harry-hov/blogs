@@ -1,5 +1,5 @@
 ---
-title: "Week 12: Only ref-filter"
+title: "Week 12: ref-filter focused Patch Series"
 categories: gsoc
 ---
 
