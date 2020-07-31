@@ -10,6 +10,7 @@ Patch series consists of:
 - `trim` and `localpart` options for email
 - short option for `tree` and `parent` atom
 - `sanitize` option for subject atom
+
 *All these features are backed-up by tests and Documentation.
 
 ## Whats Next?
