@@ -13,6 +13,10 @@ Patch series consists of:
 
 *All these features are backed-up by tests and Documentation.
 
+It got its first review on the mailing list. I was asked to make some changes. I made some changes accordingly. 
+
+Status: Sent a new branch to my mentors for review. 
+
 ## Whats Next?
 I have hackathon a to attand from 1-3 Aug. I might not be able to work during those 3 days.
 
