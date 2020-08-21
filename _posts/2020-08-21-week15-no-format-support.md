@@ -7,7 +7,7 @@ Hi everyone,
 
 It's about to over... yeah, I'm talking about GSoC. Final evaluations are few days away and none of the patches I worked on during GSoC are in the master yet. But two of the ref-filter focused patch series got positive response on the mailing list. Hopefully, they will get merged soon. I'm about to send another 'trailers' focused patch series to the mailing list soon. It will unify the 'trailers' logic from pretty and ref-filter.
 
-In the last I talked about `--grep`, I checked that grep and some other log options are working fine for pretty-lib.c as they don't depend on pretty.c. But tests are still failing from some unknown reason.
+In the last blog I talked about `--grep`, I checked that grep and some other log options are working fine for pretty-lib.c as they don't depend on pretty.c. But tests are still failing from some unknown reason.
 
 ## What next?
 
