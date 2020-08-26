@@ -9,9 +9,9 @@ Finally, the time has come, to sum up all my work so far into a single blog post
 
 ## PROJECT
 
-In short, my project is to simplify the codebase by removing duplicate logic. The task is to re-use ref-filter.{c,h}'s logic in pretty.{c,h}.
+My project is to simplify the codebase by removing duplicate logic. The task is to re-use ref-filter.{c,h}'s logic in pretty.{c,h}.
 
-**Note**: You can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
+**Note**: For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
 
 ## WHEN I MET GIT?
 
