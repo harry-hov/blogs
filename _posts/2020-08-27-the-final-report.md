@@ -31,9 +31,13 @@ Note: These patches was considered as my micro-project.
 
 ## PROJECT
 
-My project is to simplify the codebase by removing duplicate logic. The task is to re-use ref-filter.{c,h}'s logic in pretty.{c,h}.
+**Title:** Unify ref-filter formats with other --pretty formats 
 
-**Note** - For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
+**Aim:** To simplify the codebase by removing duplicate logic. The task is to re-use ref-filter.{c,h}'s logic in pretty.{c,h}.
+
+**Mentors:** Christian Couder, Heba Waly
+
+Note - For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
 
 ## PATCHES
 
