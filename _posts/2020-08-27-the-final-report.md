@@ -7,12 +7,6 @@ Hi everyone,
 
 Finally, the time has come, to sum up all my work so far into a single blog post. Without wasting any time, let's get started.
 
-## PROJECT
-
-My project is to simplify the codebase by removing duplicate logic. The task is to re-use ref-filter.{c,h}'s logic in pretty.{c,h}.
-
-**Note**: For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
-
 ## WHEN I MET GIT?
 
 I was planning to contribute in git since Aug'19. And I made my first contribution to git via [gitgitgadget](https://gitgitgadget.github.io/) in Oct'19. At that time I was mentored by dscho(aka Johannes). I continued to contribute even since then and managed to get some of my patches merged.
@@ -35,4 +29,9 @@ Here's the list of patches I worked on before GSoC.
 
 Note: These patches was considered as my micro-project.
 
+## PROJECT
+
+My project is to simplify the codebase by removing duplicate logic. The task is to re-use ref-filter.{c,h}'s logic in pretty.{c,h}.
+
+**Note** - For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
 
