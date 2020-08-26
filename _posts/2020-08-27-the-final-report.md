@@ -37,9 +37,7 @@ My project is to simplify the codebase by removing duplicate logic. The task is 
 
 ## PATCHES
 
----
-
-Patch series sent to mailing list:
+**Patch series sent to mailing list:**
 
 #### 1) Improvements to ref-filter
 - ref-filter: support different email formats
@@ -51,7 +49,7 @@ Patch series sent to mailing list:
 - pretty: refactor `format_sanitized_subject()`
 - ref-filter: add `sanitize` option for 'subject' atom
 
-Link to mailing list: https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/
+Link to mailing list: [https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/)
 
 Status: Seen (not yet in master)
 
@@ -59,8 +57,8 @@ Status: Seen (not yet in master)
 - t6300: unify %(trailers) and %(contents:trailers) tests
 - ref-filter: 'contents:trailers' show error if `:` is missing
 
-Link to mailing list: https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/
+Link to mailing list: [https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/)
 
 Status: Seen (not yet in master)
 
----
+
