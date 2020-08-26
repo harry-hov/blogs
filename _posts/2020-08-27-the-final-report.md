@@ -52,6 +52,7 @@ Patch series sent to mailing list:
 - ref-filter: add `sanitize` option for 'subject' atom
 
 Link to mailing list: https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/
+
 Status: Seen (not yet in master)
 
 #### 2) Fix trailers atom bug and improved tests
@@ -59,6 +60,7 @@ Status: Seen (not yet in master)
 - ref-filter: 'contents:trailers' show error if `:` is missing
 
 Link to mailing list: https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/
+
 Status: Seen (not yet in master)
 
 ---
