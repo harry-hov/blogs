@@ -35,3 +35,30 @@ My project is to simplify the codebase by removing duplicate logic. The task is 
 
 **Note** - For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
 
+## PATCHES
+
+---
+
+Patch series sent to mailing list:
+
+#### 1) Improvements to ref-filter
+- ref-filter: support different email formats
+- ref-filter: refactor `grab_objectname()`
+- ref-filter: modify error messages in `grab_objectname()`
+- ref-filter: rename `objectname` related functions and fields
+- ref-filter: add `short` modifier to 'tree' atom
+- ref-filter: add `short` modifier to 'parent' atom
+- pretty: refactor `format_sanitized_subject()`
+- ref-filter: add `sanitize` option for 'subject' atom
+
+Link to mailing list: https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/
+Status: Seen (not yet in master)
+
+#### 2) Fix trailers atom bug and improved tests
+- t6300: unify %(trailers) and %(contents:trailers) tests
+- ref-filter: 'contents:trailers' show error if `:` is missing
+
+Link to mailing list: https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/
+Status: Seen (not yet in master)
+
+---
