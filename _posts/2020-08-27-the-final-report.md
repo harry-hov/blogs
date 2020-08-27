@@ -127,5 +127,38 @@ Status: Seen (not yet in master)
 
 Status: Reviewed by mentors (not sent to mailing list)
 
-#### [PATCH 0/xx] pretty use ref-filter's logic 
+#### [PATCH 0/30] pretty use ref-filter's logic 
+- pretty-lib: add 'raw' commit format
+- pretty-lib: print indented commits
+- pretty: rename and make some generic support functions public
+- ref_format: change `need_color_reset_at_eol` to bit field
+- pretty-lib: add support for `--log-size`
+- pretty-lib: add support for `--graph`
+- pretty-lib: add formatting option `%<` and `%>`
+- pretty: make `parse_padding_placeholder()` public
+- pretty-lib: add formatting option `%w`
+- pretty: move line wrapping logic to new function
+- pretty-lib: add formatting option `%S`
+- pretty-lib: add formatting option `%e`
+- pretty-lib: add formatting option `%N`
+- pretty-lib: support options that expands to string literals
+- pretty-lib: add reflog related formatting options
+- pretty: move reflog formatting logic to new function
+- pretty-lib: add `raw body` formatting option
+- pretty-lib: add different date formats
+- pretty-lib: add formatting option `m`, `d`, and `D`
+- pretty-lib: add color related formatting options
+- pretty: make `struct format_commit_context` public
+- pretty.c: move color logic to `format_commit_color()`
+- pretty-lib: add formatting option `f`
+- pretty-lib: add formatting option `t` and `p`
+- pretty-lib: add more formatting option
+- pretty-lib: print commits using ref-filters logic
+- ref_format: add option to skip `\n` at eol
+- pretty: introduce `get_user_format()`
+- revision: add `use_ref_filter` in struct rev_info
+- builtin/log: new config log.useRefFilter
 
+Link to commits: [https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov)
+
+Status: Partially reviewed by mentors
