@@ -98,13 +98,15 @@ Commit formats:
 
 Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, but its still not perfect. Some issues needs work.
 
-1) It doesnt handle incorrect formatting options.
+- It  doesn't handle incorrect formatting options.
 
-2) EMAIL/MBOXED commit format needs work.
+- EMAIL/MBOXED commit format needs work.
 
-3) 30-40% tests are failing.
+- Around 30% log related tests are failing.
 
-I plan to keep on working on this even after GSoC ends. I tend to finish What i started.
+- Olga's work also needs attention.
+
+I plan to keep on working on these issues even after GSoC ends. I tend to finish What i started.
 
 ## PATCHES
 
