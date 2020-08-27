@@ -83,6 +83,17 @@ Almost all of the pretty formats are implemented. I'm only mentioning the list o
 %(trailers[:options]) : "only[=val]", "unfold[=val]", "valueonly[=val]"l, "key=<K>" and "separator=<SEP>"
 ```
 
+Commit formats:
+```
+- oneline
+- short
+- default
+- medium
+- full
+- fuller
+- raw
+```
+
 ## WHATS LEFT?
 
 Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, but its still not perfect. Some issues needs work.
@@ -91,7 +102,7 @@ Although we have implemented all the formatting options in the new file pretty-l
 
 2) EMAIL/MBOXED commit format needs work.
 
-3) 30-40% tests in are failing.
+3) 30-40% tests are failing.
 
 I plan to keep on working on this even after GSoC ends. I tend to finish What i started.
 
@@ -161,4 +172,18 @@ Status: Reviewed by mentors
 
 Link to commits: [https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov)
 
-Status: Partially reviewed by mentors (not sent to mailing list)
+Status: Reviewed by mentors (not sent to mailing list)
+
+## CLOSING REMARKS
+
+Overall it was a great experience working with a git and with my mentors. I intend to keep on contributing even after GSOC period ends.
+I would like to thank some of the awesome people I met during my journey with git and GSOC.
+```
+- Christian Couder
+- Heba Waly
+- Eric Sunshine
+- Johannes Schindelin
+- Junio C. Hamano
+```
+
+Ciao.
