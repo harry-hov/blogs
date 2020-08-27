@@ -39,6 +39,59 @@ Note: These patches was considered as my micro-project.
 
 Note - For more details, you can check out my proposal [here](https://github.com/harry-hov/GSoC-Proposal-git/blob/master/%5BGSoC%5D%20Git%20Proposal.pdf).
 
+## PROGRESS
+
+Almost all of the pretty formats are implemented. I'm only mentioning the list of formatting options those are using ref-filter's logic. 
+
+```
+%H	:	commit hash
+%h	:	abbreviated commit hash
+%T	:	tree hash
+%t	:	abbreviated tree hash
+%P	:	parent hashes
+%p	:	abbreviated parent hashes
+%an	:	author name
+%aN	:	author name (respecting .mailmap)
+%ae	:	author email
+%aE	:	author email (respecting .mailmap)
+%al	:	author email local-part (the part before the @ sign)
+%aL	:	author local-part (respecting .mailmap)
+%ad	:	author date
+%aD	:	author date, RFC2822 style
+%ar	:	author date, relative
+%at	:	author date, UNIX timestamp
+%ai	:	author date, ISO 8601-like format
+%aI	:	author date, strict ISO 8601 format
+%as	:	author date, short format (YYYY-MM-DD)
+%cn	:	committer name
+%cN	:	committer name (respecting .mailmap)
+%ce	:	committer email
+%cE	:	committer email (respecting .mailmap)
+%cl	:	author email local-part (the part before the @ sign)
+%cL	:	committer local-part (respecting .mailmap)
+%cd	:	committer date
+%cD	:	committer date, RFC2822 style
+%cr	:	committer date, relative
+%ct	:	committer date, UNIX timestamp
+%ci	:	committer date, ISO 8601-like format
+%cI	:	committer date, strict ISO 8601 format
+%cs	:	committer date, short format (YYYY-MM-DD)
+%s	:	subject
+%f	:	sanitized subject line, suitable for a filename
+%b	:	body
+%B	:	raw body (unwrapped subject and body)
+%(trailers[:options]) : "only[=val]", "unfold[=val]", "valueonly[=val]"l, "key=<K>" and "separator=<SEP>"
+```
+
+## WHATS LEFT?
+
+Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, but its still not perfect. Some issues needs work.
+1) It doesnt handle incorrect formatting options.
+2) EMAIL/MBOXED commit format needs work.
+2) 30-40% tests in are failing.
+
+I plan to keep on working on this even after GSoC ends. I tend to finish What i started.
+
 ## PATCHES
 
 **Patch series sent to mailing list:**
@@ -53,7 +106,7 @@ Note - For more details, you can check out my proposal [here](https://github.com
 - pretty: refactor `format_sanitized_subject()`
 - ref-filter: add `sanitize` option for 'subject' atom
 
-Link to mailing list: [https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/)
+Link to patch series on mailing list: [https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/)
 
 Status: Seen (not yet in master)
 
@@ -61,8 +114,14 @@ Status: Seen (not yet in master)
 - t6300: unify %(trailers) and %(contents:trailers) tests
 - ref-filter: 'contents:trailers' show error if `:` is missing
 
-Link to mailing list: [https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/)
+Link to patch series on mailing list: [https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/)
 
 Status: Seen (not yet in master)
+
+#### 3) Unify trailers logic for pretty.{c,h} and ref-filter.{c,h}
+- [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
+- [ref-filter: using pretty.c logic for trailers](https://public-inbox.org/git/d491be5d10991189f7ec6ead739c1d1500e437a1.1598043976.git.gitgitgadget@gmail.com/)
+
+Status: Reviewed by mentors (not sent to mailing list)
 
 
