@@ -125,7 +125,7 @@ Status: Seen (not yet in master)
 - [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
 - [ref-filter: using pretty.c logic for trailers](https://public-inbox.org/git/d491be5d10991189f7ec6ead739c1d1500e437a1.1598043976.git.gitgitgadget@gmail.com/)
 
-Status: Reviewed by mentors (not sent to mailing list)
+Status: Reviewed by mentors
 
 #### [PATCH 0/30] pretty use ref-filter's logic 
 - pretty-lib: add 'raw' commit format
@@ -161,4 +161,4 @@ Status: Reviewed by mentors (not sent to mailing list)
 
 Link to commits: [https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov)
 
-Status: Partially reviewed by mentors
+Status: Partially reviewed by mentors (not sent to mailing list)
