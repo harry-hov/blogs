@@ -86,9 +86,12 @@ Almost all of the pretty formats are implemented. I'm only mentioning the list o
 ## WHATS LEFT?
 
 Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, but its still not perfect. Some issues needs work.
+
 1) It doesnt handle incorrect formatting options.
+
 2) EMAIL/MBOXED commit format needs work.
-2) 30-40% tests in are failing.
+
+3) 30-40% tests in are failing.
 
 I plan to keep on working on this even after GSoC ends. I tend to finish What i started.
 
@@ -96,7 +99,7 @@ I plan to keep on working on this even after GSoC ends. I tend to finish What i 
 
 **Patch series sent to mailing list:**
 
-#### 1) Improvements to ref-filter
+#### [PATCH 0/8] Improvements to ref-filter
 - ref-filter: support different email formats
 - ref-filter: refactor `grab_objectname()`
 - ref-filter: modify error messages in `grab_objectname()`
@@ -110,7 +113,7 @@ Link to patch series on mailing list: [https://public-inbox.org/git/pull.684.v4.
 
 Status: Seen (not yet in master)
 
-#### 2) Fix trailers atom bug and improved tests
+#### [PATCH 0/2] Fix trailers atom bug and improved tests
 - t6300: unify %(trailers) and %(contents:trailers) tests
 - ref-filter: 'contents:trailers' show error if `:` is missing
 
@@ -118,10 +121,11 @@ Link to patch series on mailing list: [https://public-inbox.org/git/pull.707.git
 
 Status: Seen (not yet in master)
 
-#### 3) Unify trailers logic for pretty.{c,h} and ref-filter.{c,h}
+#### [PATCH 0/2] Unify trailers logic for pretty.{c,h} and ref-filter.{c,h}
 - [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
 - [ref-filter: using pretty.c logic for trailers](https://public-inbox.org/git/d491be5d10991189f7ec6ead739c1d1500e437a1.1598043976.git.gitgitgadget@gmail.com/)
 
 Status: Reviewed by mentors (not sent to mailing list)
 
+#### [PATCH 0/xx] pretty use ref-filter's logic 
 
