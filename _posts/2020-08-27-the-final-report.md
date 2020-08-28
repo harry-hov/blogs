@@ -113,26 +113,42 @@ I plan to keep on working on these issues even after GSoC ends. I tend to finish
 **Patch series sent to mailing list:**
 
 #### [PATCH 0/8] Improvements to ref-filter
-- ref-filter: support different email formats
-- ref-filter: refactor `grab_objectname()`
-- ref-filter: modify error messages in `grab_objectname()`
-- ref-filter: rename `objectname` related functions and fields
-- ref-filter: add `short` modifier to 'tree' atom
-- ref-filter: add `short` modifier to 'parent' atom
-- pretty: refactor `format_sanitized_subject()`
-- ref-filter: add `sanitize` option for 'subject' atom
+```
+* hv/ref-filter-misc (2020-08-17) 9 commits
+  (merged to 'next' on 2020-08-27 at c015fa6b0f)
+ + ref-filter: add `sanitize` option for 'subject' atom
+ + format-support: move `format_sanitized_subject()` from pretty
+ + pretty: refactor `format_sanitized_subject()`
+ + ref-filter: add `short` modifier to 'parent' atom
+ + ref-filter: add `short` modifier to 'tree' atom
+ + ref-filter: rename `objectname` related functions and fields
+ + ref-filter: modify error messages in `grab_objectname()`
+ + ref-filter: refactor `grab_objectname()`
+ + ref-filter: support different email formats
 
-Link to patch series on mailing list: [https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/)
+ The "--format=" option to the "for-each-ref" command and friends
+ learned a few more tricks, e.g. the ":short" suffix that applies to
+ "objectname" now also can be used for "parent", "tree", etc.
 
-Status: Seen (not yet in master)
+ Will merge to 'master'.
+```
+Link to patch series and discussion on mailing list: [https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/)
 
 #### [PATCH 0/2] Fix trailers atom bug and improved tests
-- t6300: unify %(trailers) and %(contents:trailers) tests
-- ref-filter: 'contents:trailers' show error if `:` is missing
+```
+* hv/ref-filter-trailers-atom-parsing-fix (2020-08-21) 2 commits
+  (merged to 'next' on 2020-08-24 at 79b27f3263)
+ + ref-filter: 'contents:trailers' show error if `:` is missing
+ + t6300: unify %(trailers) and %(contents:trailers) tests
 
-Link to patch series on mailing list: [https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/)
+ The parser for "git for-each-ref --format=..." was too loose when
+ parsing the "%(trailers...)" atom, and forgot that "trailers" and
+ "trailers:<modifers>" are the only two allowed forms, which has
+ been corrected.
 
-Status: Seen (not yet in master)
+ Will merge to 'master'.
+```
+Link to patch series and discussion on mailing list: [https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/)
 
 #### [PATCH 0/2] Unify trailers logic for pretty.{c,h} and ref-filter.{c,h}
 - [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
