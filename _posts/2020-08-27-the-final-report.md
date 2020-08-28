@@ -214,7 +214,7 @@ Status: Failing tests.
 
 Here's the list of some branches that contains above patches and some unfinised work. 
 
-- Branch with patches without new file format-support.{c,h} 
+- Branch without new file format-support.{c,h} 
 [`pretty-lib-2.0.2`](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2)
 
 - Branch with new file format-support.{c,h} 
