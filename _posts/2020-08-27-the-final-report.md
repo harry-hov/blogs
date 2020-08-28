@@ -134,6 +134,8 @@ I plan to keep on working on these issues even after GSoC ends. I tend to finish
 ```
 Link to patch series and discussion on mailing list: [https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.684.v4.git.1598046110.gitgitgadget@gmail.com/)
 
+Gitgitgadget PR: [https://github.com/gitgitgadget/git/pull/684](https://github.com/gitgitgadget/git/pull/684)
+
 #### [PATCH 0/2] Fix trailers atom bug and improved tests
 ```
 * hv/ref-filter-trailers-atom-parsing-fix (2020-08-21) 2 commits
@@ -149,6 +151,8 @@ Link to patch series and discussion on mailing list: [https://public-inbox.org/g
  Will merge to 'master'.
 ```
 Link to patch series and discussion on mailing list: [https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/)
+
+Gitgitgadget PR: [https://github.com/gitgitgadget/git/pull/707](https://github.com/gitgitgadget/git/pull/707)
 
 #### [PATCH 0/2] Unify trailers logic for pretty.{c,h} and ref-filter.{c,h}
 - [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
