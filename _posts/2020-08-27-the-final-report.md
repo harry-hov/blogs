@@ -172,7 +172,7 @@ Gitgitgadget PR: [https://github.com/gitgitgadget/git/pull/707](https://github.c
 - [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
 - [ref-filter: using pretty.c logic for trailers](https://public-inbox.org/git/d491be5d10991189f7ec6ead739c1d1500e437a1.1598043976.git.gitgitgadget@gmail.com/)
 
-Status: Reviewed by mentors
+Status: Waiting for another patch series to be merged to next. 
 
 #### [PATCH 0/30] pretty use ref-filter's logic 
 - pretty-lib: add 'raw' commit format
@@ -208,7 +208,20 @@ Status: Reviewed by mentors
 
 Link to commits: [https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2?author=harry-hov)
 
-Status: Reviewed by mentors (not sent to mailing list)
+Status: Failing tests.
+
+## Some Important Branches
+
+Here's the list of some branches that contains above patches and some unfinised work. 
+
+- Branch with patches without new file format-support.{c,h} 
+[`pretty-lib-2.0.2`](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2)
+
+- Branch with new file format-support.{c,h} 
+[`fix-graph3`](https://github.com/harry-hov/git/commits/fix-graph3)
+
+- Branch with new sigature atom for ref-format 
+[`cc-signature2`](https://github.com/harry-hov/git/commits/cc-signature2)
 
 ## CLOSING REMARKS
 
