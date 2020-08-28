@@ -98,13 +98,27 @@ Commit formats:
 
 Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, but its still not perfect. Some issues needs work.
 
-- It  doesn't handle incorrect formatting options.
+- Teach pretty-lib.{c,h} to handle incorrect formatting options.
+
+Initially, we used `die()` in case of an unknown formatting option. But that's not how original pretty.{c,h} handles unknown options. But recently I changed it to `return 0` in case of unknown formatting option, just like pretty.c. It is giving segmentation fault in case of unknown formatting option. I didn't get much time to investigate, but it seems like the caller function doesn't know how to handle `return 0` properly.
 
 - EMAIL/MBOXED commit format needs work.
 
+Logs can also be viewed as `mbox` format. This commit formatting option respects mailmap. We implemented mailmap in ref-filter a month ago. But as we modified new email options after Junio's review ([see here](https://public-inbox.org/git/xmqqzh7jcqv7.fsf@gitster.c.googlers.com/)). We might also need to modify the mailmap logic. This also impacts mbox/email commit format. 
+
 - Around 30% log related tests are failing.
 
+I ran tests on the branch [pretty-lib-2.0.0](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2). This branch doesn't consist of mailmap logic and mbox/email commit format. Some tests are failing for that reason. Also, it doesn't handle unknown formatting options, some test might be failing because of this. And some other tests are failing for some unknown reason.
+
 - Olga's work also needs attention.
+
+Olga's work was not very close to mine but still is somewhat similar. I thought of working on Olga's leftovers, but due to time constraints, I wasn't able to do that. I might continue working on her patches sometime in the future. 
+If you are reading this, you might be interested in Olga's work too. Here are some links to her works.
+
+Blog Series: [https://medium.com/@olyatelezhnaya](https://medium.com/@olyatelezhnaya)
+
+Commits: [https://github.com/telezhnaya/git/commits/format](https://github.com/telezhnaya/git/commits/format)
+
 
 I plan to keep on working on these issues even after GSoC ends. I tend to finish What i started.
 
