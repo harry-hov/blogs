@@ -9,7 +9,7 @@ Finally, the time has come, to sum up all my work so far into a single blog post
 
 ## WHEN I MET GIT?
 
-I was planning to contribute in git since Aug'19. And I made my first contribution to git via [gitgitgadget](https://gitgitgadget.github.io/) in Oct'19. At that time I was mentored by dscho(aka Johannes). I continued to contribute even since then and managed to get some of my patches merged.
+I was planning to contribute in Git since Aug'19. And I made my first contribution to Git via [Gitgitgadget](https://gitgitgadget.github.io/) in Oct'19. At that time I was mentored by dscho(aka Johannes). I continued to contribute even since then and managed to get some of my patches merged.
 
 ## PRE-GSOC
 
@@ -198,8 +198,8 @@ Status: Reviewed by mentors (not sent to mailing list)
 
 ## CLOSING REMARKS
 
-Overall it was a great experience working with a git and with my mentors. I intend to keep on contributing even after GSOC period ends.
-I would like to thank some of the awesome people I met during my journey with git and GSOC.
+Overall it was a great experience working with a Git and with my mentors. I intend to keep on contributing even after GSOC period ends.
+I would like to thank some of the awesome people I met during my journey with Git and GSOC.
 ```
 - Christian Couder
 - Heba Waly
