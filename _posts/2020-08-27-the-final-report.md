@@ -96,19 +96,23 @@ Commit formats:
 
 ## WHATS LEFT?
 
-Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, but its still not perfect. Some issues needs work.
+Although we have implemented all the formatting options in the new file pretty-lib.{c,h}, it's still not perfect. Some issues need work.
+
+- Around 30% log related tests are failing.
+
+I ran tests on the branch [pretty-lib-2.0.0](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2). This branch doesn't consist of mailmap logic and mbox/email commit format. Some tests are failing for that reason. Also, it doesn't handle unknown formatting options, some test might be failing because of this. And some other tests are failing for some unknown reason.
 
 - Teach pretty-lib.{c,h} to handle incorrect formatting options.
 
 Initially, we used `die()` in case of an unknown formatting option. But that's not how original pretty.{c,h} handles unknown options. But recently I changed it to `return 0` in case of unknown formatting option, just like pretty.c. It is giving segmentation fault in case of unknown formatting option. I didn't get much time to investigate, but it seems like the caller function doesn't know how to handle `return 0` properly.
 
+For ex: `git log --pretty="%xy"` gives Segmentation Fault.
+
+Branch used for testing: [`pretty-lib-2.0.2`](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2)
+
 - EMAIL/MBOXED commit format needs work.
 
 Logs can also be viewed as `mbox` format. This commit formatting option respects mailmap. We implemented mailmap in ref-filter a month ago. But as we modified new email options after Junio's review ([see here](https://public-inbox.org/git/xmqqzh7jcqv7.fsf@gitster.c.googlers.com/)). We might also need to modify the mailmap logic. This also impacts mbox/email commit format. 
-
-- Around 30% log related tests are failing.
-
-I ran tests on the branch [pretty-lib-2.0.0](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2). This branch doesn't consist of mailmap logic and mbox/email commit format. Some tests are failing for that reason. Also, it doesn't handle unknown formatting options, some test might be failing because of this. And some other tests are failing for some unknown reason.
 
 - Olga's work also needs attention.
 
@@ -172,7 +176,7 @@ Gitgitgadget PR: [https://github.com/gitgitgadget/git/pull/707](https://github.c
 - [pretty.c: refactor trailer logic to `format_set_trailers_options()](https://public-inbox.org/git/712ab9aacf240a02d808af6b6837e682b929493c.1598043976.git.gitgitgadget@gmail.com/)
 - [ref-filter: using pretty.c logic for trailers](https://public-inbox.org/git/d491be5d10991189f7ec6ead739c1d1500e437a1.1598043976.git.gitgitgadget@gmail.com/)
 
-Status: Waiting for another patch series to be merged to next. 
+Status: Waiting for another [patch series](https://public-inbox.org/git/pull.707.git.1597841551.gitgitgadget@gmail.com/) to be merged to next. 
 
 #### [PATCH 0/30] pretty use ref-filter's logic 
 - pretty-lib: add 'raw' commit format
@@ -212,16 +216,19 @@ Status: Failing tests.
 
 ## Some Important Branches
 
-Here's the list of some branches that contains above patches and some unfinised work. 
+Here's the list of some branches that contain above patches and some unfinished work. 
 
-- Branch without new file format-support.{c,h} 
-[`pretty-lib-2.0.2`](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2)
+- Branch without new file format-support.{c,h}: [`pretty-lib-2.0.2`](https://github.com/harry-hov/git/commits/pretty-lib-2.0.2)
 
-- Branch with new file format-support.{c,h} 
-[`fix-graph3`](https://github.com/harry-hov/git/commits/fix-graph3)
+Why it exists: Because junio thinks that there is no point in adding new format-support.{c,h} if we are only making some pretty.{c,h}'s static functions public.
 
-- Branch with new sigature atom for ref-format 
-[`cc-signature2`](https://github.com/harry-hov/git/commits/cc-signature2)
+- Branch with new file format-support.{c,h}: [`fix-graph3`](https://github.com/harry-hov/git/commits/fix-graph3)
+
+Why it exists: Initially, we thought it would be nice to have another pair of files to keep the functions that we used in both pretty.c and ref-filter.c.
+
+- Branch with new signature atom for ref-format: [`cc-signature2`](https://github.com/harry-hov/git/commits/cc-signature2)
+
+Why it exists: We implemented this new signature atom just like we [initially introduced new email formats](https://public-inbox.org/git/aeb116c5aaaa23dfefbc7a6f4ac743a6f5a3ade8.1595882588.git.gitgitgadget@gmail.com/) to ref-filter. We might need to refactor the logic [Junio's way](https://public-inbox.org/git/xmqqzh7jcqv7.fsf@gitster.c.googlers.com/) before rebasing it with branch `pretty-lib-2.0.2`.
 
 ## CLOSING REMARKS
 
