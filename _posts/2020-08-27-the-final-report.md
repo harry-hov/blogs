@@ -114,6 +114,8 @@ Branch used for testing: [`pretty-lib-2.0.2`](https://github.com/harry-hov/git/c
 
 Logs can also be viewed as `mbox` format. This commit formatting option respects mailmap. We implemented mailmap in ref-filter a month ago. But as we modified new email options after Junio's review ([see here](https://public-inbox.org/git/xmqqzh7jcqv7.fsf@gitster.c.googlers.com/)). We might also need to modify the mailmap logic. This also impacts mbox/email commit format. 
 
+Note: It works fine with old branches. But after we made changes to newly added email options logic, it is not possible to rebase mailmap patches without modifying them.
+
 - Olga's work also needs attention.
 
 Olga's work was not very close to mine but still is somewhat similar. I thought of working on Olga's leftovers, but due to time constraints, I wasn't able to do that. I might continue working on her patches sometime in the future. 
